@@ -2,7 +2,7 @@
 
 **Date built:** {{DATE}}
 **Built using:** `/mos-100m-offer` (Hormozi $100M Offers methodology, linear)
-**Next skill in chain:** `/mos-money-models`
+**Next skill in chain:** `/mos-100m-leads`
 
 ---
 
@@ -264,7 +264,7 @@ Expected conversion lift: {{CH10_LIFT}}% Â· Refund rate: {{CH10_REFUND_FROM}}% â
 - Trigger: {{CH12_V2_TRIGGER}}
 - Date locked: {{CH12_V2_DATE}}
 
-**Next skill to run:** `/mos-money-models` (sequence the offer ladder around this core)
+**Next skill to run:** `/mos-100m-leads` (lead magnet + one channel), then `/mos-100m-money-models` (sequence the offer ladder around this core)
 
 ---
 

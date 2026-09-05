@@ -1,6 +1,6 @@
 ---
 name: mos-100m-money-models
-description: "Build a $100M Money Model faithfully following Alex Hormozi's $100M Money Models methodology — linear, chapter-by-chapter, interactive. Six stops, takes your existing Grand Slam Offer + leads plan as input, sequences attraction/upsell/downsell/continuity offers into a money model that pays back acquisition cost inside 30 days (client-financed acquisition). ALWAYS use this skill when the user mentions: $100M Money Models, Hormozi money model, offer sequencing, attraction/upsell/downsell/continuity offers, client-financed acquisition (CFA), 30-day payback/cash, win your money back, anchor/rollover upsell, payment-plan downsell, continuity/waived-fee offers, a product/value ladder with cashflow, or asks to build a money model the 'Hormozi way' or 'by the book.' This is the THIRD skill in the $100M chain — runs AFTER /mos-100m-offer and /mos-100m-leads, and is followed by the /mos-100m-onepager capstone (offer → leads → money-models → onepager). Prefer this over the older /mos-money-models when the user wants the canonical linear book walkthrough."
+description: "Build a $100M Money Model faithfully following Alex Hormozi's $100M Money Models methodology — linear, chapter-by-chapter, interactive. Six stops, takes your existing Grand Slam Offer + leads plan as input, sequences attraction/upsell/downsell/continuity offers into a money model that pays back acquisition cost inside 30 days (client-financed acquisition). ALWAYS use this skill when the user mentions: $100M Money Models, Hormozi money model, offer sequencing, attraction/upsell/downsell/continuity offers, client-financed acquisition (CFA), 30-day payback/cash, win your money back, anchor/rollover upsell, payment-plan downsell, continuity/waived-fee offers, a product/value ladder with cashflow, or asks to build a money model the 'Hormozi way' or 'by the book.' This is the THIRD skill in the $100M chain — runs AFTER /mos-100m-offer and /mos-100m-leads, and is followed by the /mos-100m-onepager capstone (offer → leads → money-models → onepager).
 ---
 
 # /mos-100m-money-models — Hormozi $100M Money Models
@@ -19,7 +19,7 @@ A linear, interactive walkthrough of Alex Hormozi's *$100M Money Models* book. S
 
 **The centerpiece is Client-Financed Acquisition (Ch 1 + Ch 6).** Hormozi's whole thesis: a Money Model is "a sequence of offers" engineered so the profit from one customer covers the cost to get + serve *at least two more* within **30 days** — which "eliminates cash as a bottleneck for growth." Every chapter serves that one number: 30-day cash.
 
-**This skill is NOT the older `/mos-money-models`.** That one runs an agent-framework workbook (Revenue Mechanics, Constraint Engineering, etc.). This is the linear, Hormozi-faithful book walkthrough. Use this when the user wants the canonical book sequence.
+This is the linear, Hormozi-faithful book walkthrough: the canonical chapter sequence, one decision at a time.
 
 ---
 
@@ -149,7 +149,6 @@ Capstone — run /mos-100m-onepager to distil all three into a single go-to-mark
 - **Don't lead with continuity.** It crashes 30-day cash; it's the last stage.
 - **Don't discount the same offer.** Downsells change what/how, never just the price of the same thing.
 - **Don't skip the cash math.** A money model without 30-day payback math is just a price list.
-- **Don't confuse this with the old `/mos-money-models`.** Different paradigm; this is the linear book walkthrough.
 
 ---
 

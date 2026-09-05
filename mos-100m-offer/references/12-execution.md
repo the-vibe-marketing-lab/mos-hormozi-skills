@@ -52,7 +52,7 @@ Use the 5 questions above as the chapter's conversation. Don't introduce new fra
 - Funnel math worked out (customers / calls / leads / traffic, with rough conversion rates)
 - The constraint named with a single experiment to address it
 - An iteration trigger scheduled (when, what triggers)
-- A reference to `/mos-money-models` as the next skill (upsells, downsells, continuity)
+- A reference to `/mos-100m-leads` as the next skill (lead magnet + one channel), then `/mos-100m-money-models` (upsells, downsells, continuity)
 
 Push back if:
 - "I'll launch when it's ready" — set a deadline, then work backward
@@ -86,7 +86,7 @@ Push back if:
 - Trigger: [After 10 customers / After 4 weeks / After first 3 testimonials]
 - Date locked: [If time-based]
 
-**Next skill to run:** `/mos-money-models` (offer sequence — upsells, downsells, continuity for the 30-day payback window)
+**Next skill to run:** `/mos-100m-leads` (lead magnet + one channel), then `/mos-100m-money-models` (offer sequence — upsells, downsells, continuity for the 30-day payback window)
 ```
 
 ## Pitfalls (Hormozi's warnings)
@@ -94,7 +94,7 @@ Push back if:
 - **Skipping funnel math.** The offer's price implies a funnel. If the funnel doesn't exist at scale, the price doesn't work.
 - **Vague constraint.** "Marketing" / "Sales" — too broad. Name the stage. Name the experiment.
 - **No iteration trigger.** Without one, v1 becomes v∞ and the offer never compounds.
-- **Forgetting to run the money model.** Hormozi wrote Book II on this. A Grand Slam Offer without upsells/continuity/downsells leaves enormous money on the table. The next skill in the chain is `/mos-money-models`.
+- **Forgetting to run the money model.** Hormozi wrote Book II on this. A Grand Slam Offer without upsells/continuity/downsells leaves enormous money on the table. The next skill in the chain is `/mos-100m-money-models`.
 
 ## Workbook output expected
-A launch plan: specific surface, first $100k target with date, funnel math, named constraint, single unlock experiment, and a scheduled iteration trigger. Plus a pointer to `/mos-money-models` as the immediate next move.
+A launch plan: specific surface, first $100k target with date, funnel math, named constraint, single unlock experiment, and a scheduled iteration trigger. Plus a pointer to `/mos-100m-money-models` as the immediate next move.

@@ -3,7 +3,7 @@
 **Date built:** {{DATE}}
 **Built using:** `/mos-100m-leads` (Hormozi $100M Leads methodology, linear)
 **Feeds offer:** {{OFFER_NAME}} — {{OFFER_PATH}}
-**Chain:** `/mos-100m-offer` → **`/mos-100m-leads`** → `/mos-money-models`
+**Chain:** `/mos-100m-avatar` → `/mos-100m-offer` → **`/mos-100m-leads`** → `/mos-100m-money-models` → `/mos-100m-onepager`
 
 ---
 
