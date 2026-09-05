@@ -1,0 +1,18 @@
+# Generated work product belongs in your own project, not in the skill pack.
+outputs/
+tmp/
+scratch/
+__pycache__/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Secrets never live here.
+.env
+.env.*
+!.env.example
