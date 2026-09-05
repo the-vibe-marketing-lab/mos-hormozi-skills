@@ -1,6 +1,6 @@
 # mos-hormozi-skills
 
-Offer-building skills for Claude Code. Two ways to get from "I have a business" to "I have an offer, a lead plan and a money model I believe in": a fast workbook chain, and a slow interactive chain that stops at every decision.
+The $100M chain for Claude Code: five skills that walk you from "who is this for" to a Grand Slam Offer, a lead plan, a money model, and a one-page go-to-market summary, one decision at a time.
 
 Built by [The Vibe Marketing Lab](https://www.skool.com/the-vibe-marketing-lab) for the MarketingOS engine (`pipx install marketing-os`).
 
@@ -8,24 +8,19 @@ Built by [The Vibe Marketing Lab](https://www.skool.com/the-vibe-marketing-lab) 
 
 ## What's in here
 
-**The workbook chain — build your offer from your business files:**
-
-| # | Skill | What it does | Time |
-|---|-------|--------------|------|
-| 1 | `/mos-avatar` | 10-section customer avatar from your business files | ~3-5 min |
-| 2 | `/mos-offer` | Structured offer with value stack, pricing, guarantees and packaging | ~5-8 min |
-| 3 | `/mos-money-models` | Full offer sequence (attraction, upsell, downsell, continuity) with 30-day payback maths | ~5-8 min |
-
-**The $100M chain — the same jobs, one decision at a time:**
+Run them in order. Each one reads the previous one's output from `outputs/`.
 
 | # | Skill | What it does | Stops |
 |---|-------|--------------|-------|
-| 2a | `/mos-100m-offer` | Grand Slam Offer: market, pricing, value equation, bonuses, guarantee, naming | 12 |
-| 2b | `/mos-100m-leads` | Lead magnet plus ONE advertising channel, with real activity maths | 10 |
-| 2c | `/mos-100m-money-models` | Sequences attraction, upsell, downsell and continuity offers for 30-day payback | 6 |
-| 2d | `/mos-100m-onepager` | Distils all three into a one-page GTM summary (markdown, Word, HTML) | — |
+| 1 | `/mos-100m-avatar` | 10-section customer avatar from your business files. The rest of the chain reads this | — |
+| 2 | `/mos-100m-offer` | Grand Slam Offer: market, pricing, value equation, bonuses, guarantee, naming | 12 |
+| 3 | `/mos-100m-leads` | Lead magnet plus ONE advertising channel, with real activity maths | 10 |
+| 4 | `/mos-100m-money-models` | Sequences attraction, upsell, downsell and continuity offers for 30-day payback | 6 |
+| 5 | `/mos-100m-onepager` | Distils all of it into a one-page GTM summary (markdown, Word, HTML) | — |
 
-Run `/mos-avatar` first either way. Then pick one chain: the workbook chain generates documents for you to review; the $100M chain makes you choose at every step. Slower, and much harder to end up with a plan you don't believe. Running both gives you two competing offers.
+The avatar is the only step that generates a document for you. The other four stop at every decision and make you choose. Slower, and much harder to end up with a plan you don't believe.
+
+If you start at step 2 without an avatar, `/mos-100m-offer` will tell you and send you back to step 1. It never builds the avatar inline.
 
 ## Prerequisites
 
@@ -59,7 +54,7 @@ cd ~/Desktop/mos-hormozi-skills
 bash setup.sh
 ```
 
-`setup.sh` links every skill folder in this repo into `~/.claude/skills/` (a symlink on macOS and Linux, a directory junction on Windows via Git Bash). Restart any open Claude Code session, then type `/mos-avatar` to confirm it loads.
+`setup.sh` links every skill folder in this repo into `~/.claude/skills/` (a symlink on macOS and Linux, a directory junction on Windows via Git Bash). Restart any open Claude Code session, then type `/mos-100m-avatar` to confirm it loads.
 
 **Updating:** `cd ~/Desktop/mos-hormozi-skills && git pull`. The links point at the clone, so that's it. Updates are announced in the Skool community.
 
@@ -69,31 +64,41 @@ bash setup.sh
 
 Run these inside your MarketingOS repo with your business files in place.
 
-### 1. `/mos-avatar`
+### 1. `/mos-100m-avatar`
 
 Reads your business files and builds a 10-section avatar: dream client, demographics, before state, dream outcome, top pains, top goals, buying questions, what they've tried, objections, stage of awareness. Generates an avatar image if `GOOGLE_API_KEY` is set (optional).
 
-**Output:** `outputs/mos-avatar-workbook.md`
+**Output:** `outputs/mos-100m-avatar-workbook.md`
 
-### 2. `/mos-offer`
+### 2. `/mos-100m-offer`
 
-Reads the avatar and builds the offer: problem universe, solution matrix, value stack, enhancement levers (scarcity, urgency, bonuses, guarantee), packaging, pricing with value-to-price ratio, the CUB test (Confusing? Unbelievable? Boring?), and competitor research.
+Loads the avatar for the Chapter 2 market check, then walks the twelve chapters of *$100M Offers* one stop at a time: commit a price, build the value equation, divergent thinking, the five-step build, scarcity, urgency, bonuses, guarantee, and naming last.
 
-**Output:** `outputs/mos-offer-workbook-[name].md`
+**Output:** `outputs/mos-100m-offer-workbook-[slug].md`
 
-### 3. `/mos-money-models`
+### 3. `/mos-100m-leads`
 
-Reads the offer and designs the sequence: attraction offer, core, upsell, continuity, downsell, 30-day payback maths, LTV at 1/3/6/12 months, and the customer journey map.
+Reads the offer and builds a lead magnet plus one advertising channel, with the activity maths that says how many of what per day.
 
-**Output:** `outputs/mos-money-model-[name].md`
+**Output:** `outputs/mos-100m-leads-plan-[slug].md`
 
-### The $100M chain
+### 4. `/mos-100m-money-models`
 
-Run `/mos-100m-offer`, `/mos-100m-leads`, `/mos-100m-money-models`, then `/mos-100m-onepager`, in order. Each reads the previous one's output from `outputs/` and they all share one `{{slug}}`:
+Reads the offer and the leads plan and sequences the attraction, upsell, downsell and continuity offers so one customer pays for the next two inside 30 days.
+
+**Output:** `outputs/mos-100m-money-model-[slug].md`
+
+### 5. `/mos-100m-onepager`
+
+Reads all of the above and writes the one-page GTM summary.
+
+**Output:** `outputs/mos-100m-gtm-onepager-[slug].md`
+
+All five share one `{{slug}}`, so each step finds the previous one's file:
 
 ```
 outputs/
-├── mos-avatar-workbook.md
+├── mos-100m-avatar-workbook.md
 ├── mos-100m-offer-workbook-[slug].md
 ├── mos-100m-leads-plan-[slug].md
 ├── mos-100m-money-model-[slug].md
@@ -103,14 +108,13 @@ outputs/
 ## Tips
 
 - **Better inputs, better outputs.** Real testimonials change everything; the AI uses your customers' language instead of guessing.
-- **Run them in order.** Skipping the avatar means the offer has no customer language to draw from.
-- **Re-run any skill.** New testimonials, new pricing: run it again and the workbook is rewritten.
+- **Don't skip the avatar.** The offer skill checks for it and stops if it's missing. That's the point: an offer with no customer language in it is a guess.
+- **Re-run any step.** New testimonials, new pricing: run it again and the file is rewritten. Later steps pick up the change next time they run.
 - **Read the workbooks in Obsidian.** They're markdown with cross-references.
 
 ## Troubleshooting
 
-- **Skills don't show up:** the folders must be direct children of `~/.claude/skills/`. `ls ~/.claude/skills/ | grep mos-` should list them. Restart Claude Code.
+- **Skills don't show up:** the folders must be direct children of `~/.claude/skills/`. `ls ~/.claude/skills/ | grep mos-100m` should list all five. Restart Claude Code.
+- **"I can't find an avatar workbook":** run `/mos-100m-avatar` first and check `outputs/`. Older runs saved it as `mos-avatar-workbook.md`; the offer skill still finds that name.
 - **Avatar reads generic:** add real quotes to `reference/proof/testimonials.md`.
-- **"Avatar workbook not found":** run `/mos-avatar` first and check `outputs/`.
-- **Offer validation flags issues:** that's the point. The validation agent stress-tests the offer; review the flags and decide.
 - **No avatar image:** `GOOGLE_API_KEY` isn't set. Optional; the skill works without it.

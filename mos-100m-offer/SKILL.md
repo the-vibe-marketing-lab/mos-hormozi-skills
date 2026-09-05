@@ -11,7 +11,7 @@ A linear, interactive walkthrough of Alex Hormozi's *$100M Offers* book. Twelve 
 
 The chapter framework knowledge is encoded in `references/01-*.md` through `12-*.md` — the orchestrator loads them on-demand, not all at once.
 
-**This skill is NOT `/mos-offer` v1.** V1 runs parallel multi-agent custom synthesis. V2 follows Hormozi's strict linear order: market → differentiate → premium price → value equation → divergent thinking → 5-step build → scarcity → urgency → bonuses → guarantee → name → execute. Use v2 when the user wants the canonical book sequence.
+**This skill is a linear book walkthrough, not a generated workbook.** It follows Hormozi's strict order: market → differentiate → premium price → value equation → divergent thinking → 5-step build → scarcity → urgency → bonuses → guarantee → name → execute. Use v2 when the user wants the canonical book sequence.
 
 ---
 
@@ -20,12 +20,12 @@ The chapter framework knowledge is encoded in `references/01-*.md` through `12-*
 ### Step 1 — Locate the avatar workbook (REQUIRED)
 
 Search in order:
-1. `outputs/` in the current project — look for `*mos-avatar-workbook*` first, then `*avatar*` or `*customer-avatar*` as fallback
+1. `outputs/` in the current project — look for `*mos-100m-avatar-workbook*` first, then `*mos-avatar-workbook*` (older runs), then `*avatar*` or `*customer-avatar*` as fallback
 2. `reference/core/audience.md` — optional business-context convention, skip if not found
-3. Any sibling project folder — `**/mos-avatar-workbook*`, then `**/customer-avatar*` or `**/audience.md`
+3. Any sibling project folder — `**/mos-100m-avatar-workbook*` or `**/mos-avatar-workbook*`, then `**/customer-avatar*` or `**/audience.md`
 
 If avatar not found → tell the user:
-> "I can't find an avatar workbook. Hormozi's Chapter 2 is the market/avatar step — this skill loads your existing avatar rather than rebuilding it. Run `/mos-avatar` first, then come back."
+> "I can't find an avatar workbook. Hormozi's Chapter 2 is the market/avatar step — this skill loads your existing avatar rather than rebuilding it. Run `/mos-100m-avatar` first, then come back."
 
 Then stop. Do NOT attempt to construct an avatar inline.
 
@@ -154,8 +154,8 @@ Next: run /mos-100m-leads to build the marketing plan — the lead magnet + adve
 
 ## Pitfalls (skill-level)
 
-- **Don't be v1.** V1 runs parallel agents that produce a custom synthesis. V2 is linear and Hormozi-faithful. If the user wants the custom synthesis, redirect to `/mos-offer`.
-- **Don't rebuild the avatar.** Ch 2 is validation only. If the avatar is missing, send the user to `/mos-avatar`.
+- **Don't synthesise ahead of the reader.** This is linear and Hormozi-faithful: one chapter, one decision, then the next. Don't generate the whole workbook in one pass.
+- **Don't rebuild the avatar.** Ch 2 is validation only. If the avatar is missing, send the user to `/mos-100m-avatar` and stop.
 - **Don't name early.** Naming is Ch 11 — last. If the user offers a name early, capture it as a candidate but don't lock it.
 - **Don't skip Ch 5.** The brick exercise feels silly but is the warmup for Ch 6's divergent brainstorm. Without it, Ch 6 is flat.
 - **Don't generate the final workbook only at the end.** Build it incrementally so work isn't lost on interruption.

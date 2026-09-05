@@ -1,11 +1,11 @@
 ---
-name: mos-avatar
-description: "Build a customer avatar workbook from your business reference files. 10-section avatar with parallel agent generation, validation, and optional image generation. Use when: (1) Creating a customer avatar for a business (2) User says customer avatar, dream customer, target market, avatar workbook, who is my customer (3) Rebuilding or updating an existing avatar with new reference material."
+name: mos-100m-avatar
+description: "Step 1 of the $100M chain: build the customer avatar workbook the rest of the chain reads. Run this first, or whenever /mos-100m-offer says it cannot find an avatar. Build a customer avatar workbook from your business reference files. 10-section avatar with parallel agent generation, validation, and optional image generation. Use when: (1) Creating a customer avatar for a business (2) User says customer avatar, dream customer, target market, avatar workbook, who is my customer (3) Rebuilding or updating an existing avatar with new reference material."
 ---
 
-# TVML Customer Avatar Builder
+# /mos-100m-avatar — Customer Avatar (Step 1 of the $100M chain)
 
-Build a complete customer avatar workbook from business reference files using parallel agents.
+Build a complete customer avatar workbook from business reference files using parallel agents. This is the first stop in the $100M chain: `/mos-100m-offer` loads this workbook for its Chapter 2 market check and refuses to start without it.
 
 > Built on The Vibe Marketing Lab's proprietary customer research methodology.
 
@@ -17,7 +17,7 @@ Takes a business's reference files (soul, offer, audience, voice, testimonials) 
 
 Uses **3 parallel agents** for section generation and **1 validation agent** for fact-checking -- keeping the main conversation lean while producing deeper, more focused output per section.
 
-**Output:** `outputs/mos-avatar-workbook.md` + `outputs/avatar-{name}.jpg`
+**Output:** `outputs/mos-100m-avatar-workbook.md` + `outputs/avatar-{name}.jpg`
 
 ---
 
@@ -284,7 +284,7 @@ When the validation agent returns, add its table as `## Validation Notes` at the
 Write the assembled, validated workbook to:
 
 ```
-outputs/mos-avatar-workbook.md
+outputs/mos-100m-avatar-workbook.md
 ```
 
 Run the Quality Checklist before saving.
@@ -349,11 +349,13 @@ Phase 6: Write final workbook (main)
 
 | Step | Skill | Produces |
 |------|-------|---------|
-| **1** | **mos-avatar (here)** | **Customer avatar workbook** |
-| 2 | mos-offer | Core offer workbook |
-| 3 | mos-money-models | Money model workbook |
+| **1** | **mos-100m-avatar (here)** | **Customer avatar workbook** |
+| 2 | mos-100m-offer | Grand Slam Offer workbook (12 stops) |
+| 3 | mos-100m-leads | Lead magnet + one channel (10 stops) |
+| 4 | mos-100m-money-models | Offer sequence for 30-day payback (6 stops) |
+| 5 | mos-100m-onepager | GTM one-pager |
 
-Next: "Avatar ready. Say *build an offer* to run mos-offer."
+Next: "Avatar ready. Run `/mos-100m-offer` to build the Grand Slam Offer."
 
 ---
 
@@ -391,7 +393,7 @@ Actions:
 7. Generate avatar image (if Gemini configured)
 8. Write final workbook
 
-Result: `outputs/mos-avatar-workbook.md` with validated 10-section avatar.
+Result: `outputs/mos-100m-avatar-workbook.md` with validated 10-section avatar.
 
 ### Example 2: Rebuild avatar with new testimonials
 

@@ -4,9 +4,9 @@
 "Market > Offer > Persuasion." A Grand Slam Offer to the wrong market falls on deaf ears. In COVID, toilet paper sold for $100/roll with no offer and no persuasion — because the audience was starving. Find a starving crowd before you build anything.
 
 ## Framework — IMPORTANT: this skill DOES NOT rebuild the avatar
-The user already has avatar work (from `/mos-avatar` or in `reference/core/audience.md`). The job here is **fast 4-tenet validation** of the existing avatar — not a rebuild.
+The user already has avatar work (from `/mos-100m-avatar` or in `reference/core/audience.md`). The job here is **fast 4-tenet validation** of the existing avatar — not a rebuild.
 
-If avatar is missing entirely → tell the user to run `/mos-avatar` first and stop. Do not attempt to construct an avatar from scratch in this chapter.
+If avatar is missing entirely → tell the user to run `/mos-100m-avatar` first and stop. Do not attempt to construct an avatar from scratch in this chapter.
 
 ### The 4 tenets of a good market
 A market must satisfy ALL FOUR — not most, all four. Score each 1–5 against the existing avatar.

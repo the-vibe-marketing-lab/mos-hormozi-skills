@@ -2,7 +2,7 @@
 
 This repo is shared with The Vibe Marketing Lab community members. It is PUBLIC.
 
-Offer-building skills: the Avatar → Offer → Money Model workbook chain and the interactive $100M chain. This pack sits alongside the MarketingOS engine (`pipx install marketing-os`) and the other `mos-*-skills` packs.
+Offer-building skills: the interactive $100M chain, avatar first. This pack sits alongside the MarketingOS engine (`pipx install marketing-os`) and the other `mos-*-skills` packs.
 
 ---
 
@@ -25,18 +25,14 @@ Every commit is visible to community members.
 
 ## What This Repo Contains
 
-**Workbook chain:**
-1. `mos-avatar` — 10-section customer avatar workbook
-2. `mos-offer` — offer workbook (value stack, pricing, guarantees, packaging)
-3. `mos-money-models` — offer sequence with 30-day payback maths
+**The $100M chain, in order:**
+1. `mos-100m-avatar` — 10-section customer avatar workbook (Step 1; the offer skill refuses to start without it)
+2. `mos-100m-offer` — Grand Slam Offer, 12 stops
+3. `mos-100m-leads` — lead magnet + one channel, 10 stops
+4. `mos-100m-money-models` — offer sequencing for 30-day payback, 6 stops
+5. `mos-100m-onepager` — GTM one-pager capstone
 
-**$100M chain — interactive, chapter-by-chapter alternative to 2 + 3:**
-- `mos-100m-offer` — Grand Slam Offer, 12 stops
-- `mos-100m-leads` — lead magnet + one channel, 10 stops
-- `mos-100m-money-models` — offer sequencing for 30-day payback, 6 stops
-- `mos-100m-onepager` — GTM one-pager capstone
-
-All four read and write `outputs/mos-100m-*-{{slug}}.md`, sharing one slug so each step finds the previous one's output.
+The avatar writes `outputs/mos-100m-avatar-workbook.md`; the other four read and write `outputs/mos-100m-*-{{slug}}.md`, sharing one slug so each step finds the previous one's output. The older `mos-offer` and `mos-money-models` workbook skills were retired from this pack on 2026-09-05.
 
 Each skill is a flat top-level folder with a `SKILL.md` (the skill prompt) and, where needed, `references/` (frameworks) or `scripts/` (deterministic tools). `setup.sh` links every top-level skill folder into `~/.claude/skills/`.
 
