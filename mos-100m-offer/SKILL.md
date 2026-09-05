@@ -1,6 +1,6 @@
 ---
 name: mos-100m-offer
-description: "Build a Grand Slam Offer faithfully following Alex Hormozi's $100M Offers methodology — linear, chapter-by-chapter, interactive. Twelve stops (one per chapter), uses existing avatar work as input, produces a complete offer workbook + one-pager. ALWAYS use this skill when the user mentions: $100M Offers, Hormozi offer, Grand Slam Offer, value equation, MAGIC naming, premium pricing, starving crowd, scarcity + urgency stack, guarantee with teeth, the offer book, or asks to build an offer the 'Hormozi way' or 'by the book.' Prefer this over /mos-offer when the user wants the canonical linear walkthrough rather than the parallel-agent custom synthesis."
+description: "Build a Grand Slam Offer faithfully following Alex Hormozi's $100M Offers methodology — linear, chapter-by-chapter, interactive. Twelve stops (one per chapter), uses existing avatar work as input, produces a complete offer workbook + one-pager. ALWAYS use this skill when the user mentions: $100M Offers, Hormozi offer, Grand Slam Offer, value equation, MAGIC naming, premium pricing, starving crowd, scarcity + urgency stack, guarantee with teeth, the offer book, or asks to build an offer the 'Hormozi way' or 'by the book.' Requires the avatar from /mos-100m-avatar; if it is missing, send the user there first."
 ---
 
 # /mos-100m-offer — Hormozi $100M Offers (v2)
