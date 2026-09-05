@@ -49,7 +49,7 @@ If you start at step 2 without an avatar, `/mos-100m-offer` will tell you and se
 Skills live in `~/.claude/skills/`. This repo keeps them under version control and links them into place, so a `git pull` is all an update takes.
 
 ```bash
-git clone https://github.com/reapzyau/mos-hormozi-skills.git ~/Desktop/mos-hormozi-skills
+git clone https://github.com/the-vibe-marketing-lab/mos-hormozi-skills.git ~/Desktop/mos-hormozi-skills
 cd ~/Desktop/mos-hormozi-skills
 bash setup.sh
 ```
@@ -58,7 +58,7 @@ bash setup.sh
 
 **Updating:** `cd ~/Desktop/mos-hormozi-skills && git pull`. The links point at the clone, so that's it. Updates are announced in the Skool community.
 
-**Other packs:** this is one of the `mos-*-skills` packs that accompany the [MarketingOS engine](https://github.com/reapzyau/marketing-os). The full list is in the [marketing-os-skills](https://github.com/reapzyau/marketing-os-skills) README.
+**Other packs:** this is one of the `mos-*-skills` packs that accompany the [MarketingOS engine](https://github.com/the-vibe-marketing-lab/marketing-os). The full list is in the [marketing-os-skills](https://github.com/the-vibe-marketing-lab/marketing-os-skills) README.
 
 ## How to use
 
